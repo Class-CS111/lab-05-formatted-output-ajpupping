@@ -10,7 +10,8 @@ public class Main
 	{
     //DECLARATION + INITIALIZATION SECTION
 
-    double initialAmount = 1.68;
+    double initialAmount = 3.72;
+
     int centsRemaining = 0;
     int numQuarters = 0;
     int numDimes = 0;
@@ -33,14 +34,8 @@ public class Main
 
     numPennies = centsRemaining;
     
-
-
-    //OUTPUT SECTION
-    System.out.println("Dollar Amount: $" + initialAmount);
-    System.out.println("Quarters: " + numQuarters);
-    System.out.println("Dimes: " + numDimes);
-    System.out.println("Nickels: " + numNickels);
-    System.out.println("Pennies: " + numPennies);
+    System.out.printf("$%.2f can be converted into %d quarters, %d dimes, %d nickels, and %d pennies.", 
+      initialAmount, numQuarters, numDimes, numNickels, numPennies);
 
   }
 
